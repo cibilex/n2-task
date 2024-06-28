@@ -2,7 +2,7 @@ import { ref } from 'vue'
 import { defineStore } from 'pinia'
 import { LocalItems, Themes } from '@/data/enums'
 import { useI18n } from 'vue-i18n'
-import { useDropdownStore } from '@/stores/dropdown.ts'
+import { useDropdownStore } from '@/stores/dropdown'
 
 export const useMetaStore = defineStore('meta', () => {
   const theme = ref(Themes.DARK)

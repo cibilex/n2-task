@@ -1,41 +1,47 @@
-.env dosyalarını bilerek gitignore almadım
+# User Management System
 
-# n2-task
+This project was created as a job task for N2Mobil Tracking Systems Inc. It includes pages for users, todos, posts, and albums. The main features and technologies used in this project are listed below.
 
-This template should help get you started developing with Vue 3 in Vite.
+## Features
 
-## Recommended IDE Setup
+- **Users Page:** Displays a list of users. Clicking on a user navigates to the posts page for that user.
+- **Todos Page:** Displays a list of todos.
+- **Posts Page:** Displays a list of posts. Users can navigate between posts.
+- **Albums Page:** Displays a list of albums.
+- **Navigation:** Seamless navigation between different pages via links.
+- **Theme Selector:** Allows users to switch between light and dark modes.
+- **Language Selector:** Provides language support for multiple languages.
+- **Persistent Settings:** Theme and language preferences are stored in `localStorage`.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Technologies Used
 
-## Type Support for `.vue` Imports in TS
+- **Vite:** Used for fast and efficient project setup and development.
+- **UnoCSS:** A utility-first CSS engine used for styling, incorporating TailwindCSS presets.
+- **i18n:** Integrated for internationalization support.
+- **Dark Mode:** Added support for dark mode.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+## Installation
 
-## Customize configuration
+To set up the project locally, follow these steps:
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+1. Clone the repository:
+   ```bash
+   git clone [<repository-url>](https://github.com/cibilex/n2-task.git)
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd n2-task
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-## Project Setup
+**Notes**
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+- I deliberately did not include .env files in .gitignore.
+- This project includes additional features beyond the given task, such as dark mode and language support, to enhance the user experience.
