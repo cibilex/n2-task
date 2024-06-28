@@ -1,20 +1,5 @@
 <template>
-  <Page :loading>
-    <template #navbar>
-      <div>
-        <Avatar /> <Divider class="mt-19px" />
-
-        <div class="flex gap-6 flex-col pt-14">
-          <Link text="todos" icon="i-tabler:checkup-list" :to="{ name: 'users-id-todos' }" />
-          <Link text="posts" icon="i-tabler:notebook" :to="{ name: 'users' }" />
-          <Link text="albums" icon="i-tabler:photo-heart" :to="{ name: 'users' }" />
-        </div></div
-    ></template>
-
-    <template #title>
-      <PageTitle title="allUsers" />
-    </template>
-
+  <PageContent :loading>
     <div class="flex flex-col">
       <div
         @click="todo.completed = !todo.completed"
@@ -31,16 +16,14 @@
         <span class="first-letter:capitalize">{{ todo.title }}</span>
       </div>
     </div>
-  </Page>
+  </PageContent>
 </template>
 
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
-import Card from '@/views/users/components/Card.vue'
 import axios from '@/lib/axios'
 import { type Todo } from '@/types/todo'
 import { useRoute } from 'vue-router'
-import Avatar from '@/components/global/Avatar.vue'
 
 const route = useRoute()
 const todos = ref<Todo[]>([])
