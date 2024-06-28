@@ -1,9 +1,14 @@
 import './assets/scss/main.scss'
+import './assets/scss/effects.scss'
+
 import Loader from '@/components/global/Loader.vue'
 
 import PageTitle from '@/components/PageTitle.vue'
 import Link from '@/components/global/Link.vue'
+import Pill from '@/components/Pill.vue'
 import Page from '@/components/Page.vue'
+import CountryFlag from 'vue-country-flag-next'
+
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import 'virtual:uno.css'
@@ -21,4 +26,6 @@ app
   .component('Page', Page)
   .component('Loader', Loader)
   .component('Link', Link)
+  .component('Pill', Pill)
+  .component('CountryFlag', CountryFlag)
 app.mount('#app')

@@ -7,3 +7,8 @@ export enum Themes {
   LIGHT = 'light',
   DARK = 'dark'
 }
+
+export const languageModel = {
+  tr: 'tr',
+  en: 'gb'
+}

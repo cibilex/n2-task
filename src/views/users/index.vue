@@ -15,12 +15,10 @@
 import { onMounted, ref } from 'vue'
 import Card from '@/views/users/components/Card.vue'
 import axios from '@/lib/axios'
-import { useI18n } from 'vue-i18n'
 import { type User } from '@/types/user'
 
 const users = ref<User[]>([])
 const loading = ref(true)
-const { t } = useI18n()
 
 const getUsers = async () => {
   try {

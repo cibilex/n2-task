@@ -1,12 +1,9 @@
 <template>
   <router-link
     :to="{
-      name: 'users',
-      params: {
-        id: user.id
-      }
+      name: 'users'
     }"
-    class="hover:(shadow-[0px_0px_48px_0px_#55555540] cursor-pointer) active:scale-96 duration-200 rounded-3 border border-[#D8D9DD] px-6 py-5"
+    class="hover:(shadow-[0px_0px_48px_0px_#55555540] cursor-pointer) active:scale-96 duration-200 rounded-3 border border-border dark:border-dark-border px-6 py-5"
   >
     <CardHeader :user />
 
