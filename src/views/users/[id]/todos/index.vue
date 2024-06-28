@@ -4,7 +4,7 @@
       <div
         @click="todo.completed = !todo.completed"
         v-for="todo in todos"
-        :id="`${todo.id}`"
+        :key="`${todo.id}`"
         class="text-[#485B69] cursor-pointer dark:text-dark-subtitle py-14px text-sm leading-20px font-normal flex gap-15px items-center"
       >
         <div
@@ -29,7 +29,7 @@ const route = useRoute()
 const todos = ref<Todo[]>([])
 const loading = ref(true)
 
-const getUsers = async () => {
+const getTodos = async () => {
   try {
     const userId = route.params.id
 
@@ -41,5 +41,5 @@ const getUsers = async () => {
   loading.value = false
 }
 
-onMounted(() => getUsers())
+onMounted(() => getTodos())
 </script>

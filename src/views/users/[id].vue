@@ -36,7 +36,7 @@ const links: { icon: string; text: string; link: RouteLocationRaw }[] = [
   {
     icon: 'i-tabler:photo-heart',
     text: 'albums',
-    link: { name: 'users-id-todos' }
+    link: { name: 'users-id-albums' }
   }
 ]
 </script>
