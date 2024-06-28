@@ -16,7 +16,7 @@ export default defineConfig({
     }),
     UnoCSS(),
     VueI18nPlugin({
-      include: [resolve(__dirname, './src/locale/**')],
+      include: [resolve(__dirname, './src/locale/**')]
     })
   ],
   resolve: {

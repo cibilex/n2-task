@@ -17,14 +17,18 @@ export default defineConfig({
     }),
     presetAttributify(),
     presetTagify(),
-    presetIcons(),
+    presetIcons({
+      extraProperties: {
+        'font-size': '24px'
+      }
+    }),
     presetWebFonts({
-      provider: 'google',
       fonts: {
         sans: 'Roboto',
         poppins: {
           weights: [300, 400, 500, 600, 700],
-          name: 'poppins'
+          name: 'Poppins',
+          provider: 'google'
         }
       }
     })

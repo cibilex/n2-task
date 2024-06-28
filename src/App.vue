@@ -3,15 +3,21 @@ import { RouterView } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { LocalItems, Themes } from './data/enums'
 import { useMetaStore } from './stores/theme'
+
 const metaStore = useMetaStore()
+
 const { availableLocales, locale } = useI18n()
+
+const setLocale = (target: string) => {
+  locale.value = target
+  localStorage.setItem(LocalItems.LANG, target)
+}
+
 const currLocale = localStorage.getItem(LocalItems.LANG) || navigator.language
 if (currLocale && availableLocales.includes(currLocale)) {
-  locale.value = currLocale
-  localStorage.setItem(LocalItems.LANG, locale.value)
+  setLocale(currLocale)
 } else {
-  locale.value = 'tr'
-  localStorage.setItem(LocalItems.LANG, locale.value)
+  setLocale('en')
 }
 
 if (
