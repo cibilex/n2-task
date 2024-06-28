@@ -45,3 +45,8 @@ To set up the project locally, follow these steps:
 
 - I deliberately did not include .env files in .gitignore.
 - This project includes additional features beyond the given task, such as dark mode and language support, to enhance the user experience.
+
+
+**Demo**
+
+Check out the live demo [here](https://deluxe-cassata-4211a5.netlify.app).
