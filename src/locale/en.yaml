@@ -3,3 +3,7 @@ users: Users
 location: Location
 website: Website
 company: Company
+todos: Todos
+posts: Posts
+albums: Albums
+goHome: Go Home

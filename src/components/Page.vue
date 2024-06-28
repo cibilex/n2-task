@@ -10,7 +10,7 @@
 
     <div>
       <div class="p-7 pr-0 pt-44px h-full dark:bg-dark-bg">
-        <PageTitle title="allUsers" />
+        <slot name="title" />
 
         <div class="pt-35px overflow-scroll h-full pr-7">
           <Loader v-if="loading" />

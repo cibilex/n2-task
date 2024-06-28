@@ -2,11 +2,12 @@
   <Page :loading>
     <template #navbar> <Link text="users" icon="i-tabler:users" :to="{ name: 'users' }" /> </template>
 
+    <template #title>
+      <PageTitle :prevBtn="false" title="allUsers" />
+    </template>
+
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8">
-      <template v-if="loading"></template>
-      <template v-else>
-        <Card v-for="user in users" :key="user.id" :user />
-      </template>
+      <Card v-for="user in users" :key="user.id" :user />
     </div>
   </Page>
 </template>

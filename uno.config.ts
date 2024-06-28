@@ -18,7 +18,8 @@ export default defineConfig({
     presetTagify(),
     presetIcons({
       extraProperties: {
-        'font-size': '24px'
+        'font-size': '24px',
+        color: '#26303E'
       }
     }),
     presetWebFonts({

@@ -8,6 +8,7 @@ import Link from '@/components/global/Link.vue'
 import Pill from '@/components/Pill.vue'
 import Page from '@/components/Page.vue'
 import CountryFlag from 'vue-country-flag-next'
+import Divider from '@/components/Divider.vue'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
@@ -25,6 +26,7 @@ app
   .component('PageTitle', PageTitle)
   .component('Page', Page)
   .component('Loader', Loader)
+  .component('Divider', Divider)
   .component('Link', Link)
   .component('Pill', Pill)
   .component('CountryFlag', CountryFlag)

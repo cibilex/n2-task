@@ -1,7 +1,10 @@
 <template>
   <router-link
     :to="{
-      name: 'users'
+      name: 'users-id-todos',
+      params: {
+        id: user.id
+      }
     }"
     class="hover:(shadow-[0px_0px_48px_0px_#55555540] cursor-pointer) active:scale-96 duration-200 rounded-3 border border-border dark:border-dark-border px-6 py-5"
   >
